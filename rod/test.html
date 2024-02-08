@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Testing templates</title>
+</head>
+
+<body>
+    <main></main>
+    <template>
+        <article class="template1">
+            <h2>Here is a cheese</h2>
+            <h3 class="governmentName">Romeo</h3>
+            <p class="info">This shit contains milk, and I am lactose intolerant</p>
+            <p class="info2">The BatCat, our saviour</p>
+            <img class="java_picture"
+                src="https://unsplash.com/photos/sliced-cheese-on-black-plate-beside-wine-glass-jeAjT87nbjM"
+                alt="cheese">
+        </article>
+    </template>
+    <script>
+        const hero = {
+            superName: "The BatCat",
+            civilName: "Bruce 'the Cat' Wayne",
+            ability: ("Fat, but can fly"),
+            info2: "Eats nothing but lasagna",
+            img: "https://photos.costume-works.com/full/romeo_the_bat_cat.jpg",
+            isEvil: false,
+            hasCape: true,
+            age: 300000000,
+        };
+        for (let i = 0; i < 1000; i++) {
+            // fang template //
+            const template = document.querySelector("template").content;
+            console.log(template);
+            // lav kopi //
+            const copy = template.cloneNode(true);
+            // skrevet indhold //
+            copy.querySelector("h2").textContent = hero.superName;
+            copy.querySelector("h3").textContent = hero.civilName;
+            copy.querySelector(".info").textContent = hero.ability;
+            copy.querySelector(".info2").textContent = hero.info2;
+            copy.querySelector("img").src = hero.img;
+            // find the father //
+            const parent = document.querySelector("main");
+            // append DOM //
+            parent.appendChild(copy);
+        }
+    </script>
+</body>
+
+
+</html>

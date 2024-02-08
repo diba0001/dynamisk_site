@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Mine venner</h1>
+    <ul class="friendlist"></ul>
+
+    <template>
+        <li class="friend">
+            <h2 class="name">HERSKAL MIN VENS NAVN STÅ</h2>
+            <p class="since">Jeg har kendt personen siden <span></span></p>
+        </li>
+    </template>
+
+    <script>
+        const mineVenner = [
+            {
+                name: "Madonna",
+                since: 2002
+            },
+            {
+                name: "Whitney Houston",
+                since: 2000
+            },
+            {
+                name: "Morgan Freeman",
+                since: 2005
+            },
+            {
+                name: "Hasbulla",
+                since: 2018
+            }
+        ]
+        mineVenner.forEach(visVen)
+        function visVen(ven) {
+            const template = document.querySelector("template").content;
+            const clone = template.cloneNode(true);
+
+            clone.querySelector(".name").textContent = ven.name;
+            clone.querySelector(".since span").textContent = ven.since;
+
+            const parentElement = document.querySelector(".friendlist");
+            parentElement.appendChild(clone);
+        }
+    </script>
+</body>
+
+</html>

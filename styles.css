@@ -1,0 +1,193 @@
+body {
+  background-color: black;
+}
+article p {
+  font-size: 20px;
+  color: white;
+}
+h1 {
+  font-size: 50px;
+  color: white;
+}
+h2 {
+  font-size: 30px;
+  color: white;
+}
+header {
+  top: 0;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid white;
+}
+header nav ul,
+header nav {
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  overflow-x: auto;
+}
+header nav ul {
+  gap: 1rem;
+}
+a {
+  font-family: "Young Serif", sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+a:hover {
+  color: darkorange;
+  font-family: "Young Serif", sans-serif;
+}
+.menu {
+  font-family: "Times New Roman", Times, serif;
+}
+.headers {
+  margin: auto;
+  margin-top: 3rem;
+  display: grid;
+  justify-content: center;
+}
+.headers h1 {
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  color: green;
+}
+.headers h2 {
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  color: orange;
+}
+.headers img {
+  margin-top: 2rem;
+}
+footer {
+  font-family: "Young Serif";
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  margin-top: 10rem;
+  gap: 10px;
+  border-top: 1px solid white;
+  padding: 20px;
+}
+.main_grid {
+  margin: auto;
+  display: grid;
+  align-self: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+.brandList {
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+.letterGroup {
+  font-size: 20px;
+  color: orange;
+}
+#product_list_header {
+  font-family: "Young Serif", sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+}
+.udsolgt_header {
+  color: red;
+}
+.product_header {
+  text-transform: uppercase;
+}
+.sale_header {
+  color: orange;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.main_grid h1 {
+  margin: 1rem;
+  font-size: 30px;
+}
+
+.item_card {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+#item_article h1 {
+  font-size: 30px;
+  color: orange;
+}
+#item_article {
+  margin: 1rem;
+  column-count: 2;
+}
+
+.item_info {
+  display: grid;
+  margin: auto;
+}
+
+.item_info p {
+  font-size: 25px;
+}
+.discount {
+  color: red;
+}
+.udsolgt h1 {
+  text-transform: uppercase;
+  color: red;
+}
+.udsolgt img {
+  opacity: 0.5;
+}
+.discounted {
+  text-decoration: line-through;
+}
+.on_sale_header h1 {
+  color: red;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  border: 1px solid #ccc;
+}
+.java_picture {
+  width: 80%;
+  height: auto;
+}
+.template1 {
+  margin-left: 5rem;
+}
+h3 {
+  color: white;
+  font-size: 20px;
+}
+h2 {
+  color: yellow;
+}
+
+#article_main {
+  border: none;
+}
