@@ -191,3 +191,34 @@ h2 {
 #article_main {
   border: none;
 }
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.letterGroup a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.letterGroup a:hover {
+  color: orange;
+}
+
+.letterGroup ol li {
+  margin-bottom: 5px;
+}
+
+.letterGroup {
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.brandList {
+  margin-bottom: 2rem;
+}
